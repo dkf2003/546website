@@ -46,3 +46,22 @@ To seed the application run:
 ```bash
 npm run seed
 ```
+
+## Running the Application through a Docker Container
+
+To Build (First time use)
+```
+docker-compose up --build
+```
+
+To start
+
+```
+docker-compose up
+```
+
+To seed the db
+
+```
+docker-compose exec app npm run seed
+```
