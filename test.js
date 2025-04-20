@@ -3,7 +3,6 @@ import assert from 'assert';
 import app from './app.js';  // Your Express app
 import session from 'supertest-session';
 
-const server = http.createServer(app);
 
 // Initialize a test session
 const testSession = session(app);
@@ -66,8 +65,9 @@ async function runTests() {
     console.log('Protected route test passed:', protectedRouteResponse.statusCode === 200);
   } catch (err) {
     console.error('Test failed:', err);
+    process.exit(1);
   } finally {
-    server.close();  // Close the server after tests
+    process.exit(0);
   }
 }
 

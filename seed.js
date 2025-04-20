@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 
-const URL = "mongodb://localhost:27017/CS546-FP-WiFly";
+const URL = "mongodb+srv://generalUser:generalUser@wiflynyc.yipbflu.mongodb.net/WiFlyNYC?retryWrites=true&w=majority&appName=WiFlyNYC";
 
 const seedDatabase = async () => {
   try {

@@ -1,4 +1,4 @@
 export const mongoConfig = {
-  serverUrl: 'mongodb://localhost:27017/',
-  database: 'CS546-FP-WiFly'
+  serverUrl: 'mongodb+srv://generalUser:generalUser@wiflynyc.yipbflu.mongodb.net/?retryWrites=true&w=majority&appName=WiFlyNYC',
+  database: 'WiFlyNYC'
 };
